@@ -1,0 +1,420 @@
+<html>
+<head>
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+    
+	<title>Potion Seller: Label store</title>
+	<meta charset="utf-8" />
+	<meta http-equiv=”Content-Language” content=”en”/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Potion Seller The game">
+	<meta name="theme-color" content="#904A3B">
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body id="label-store">
+
+  <header class="show-down">
+    <!--LEFT START-->
+    <div class="left">
+      <div class="row">
+        <img class="logo hide-sm" src="assets/logo_sf.svg" alt="logo">
+        <div id="dtime">
+          <div class="info hide-sm">
+            <span>DAY</span>
+            <span class="dat" id="dt-day">--</span>
+          </div>
+          <div class="info">
+            <span class="dat" id="dt-time">--:--</span>
+            <span class="hide-md">HH : MM</span>
+          </div>
+        </div>
+        <div class="info hide-sm" id="magic-pwr">
+          <span class="dat" id="q-mpwr">--</span>
+          <div class="row">
+            <small>MAGIC<br/>POWER</small>
+            <strong>Lv. 2</strong>
+          </div>
+          <div class="progressbar mpwr">
+            <div class="progress" style="width:50%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--LEFT END-->
+    <!--CENTER START-->
+    <div class="center">
+      <div class="parchment">
+        <div class="p-cont">
+          <i class="material-icons">label</i>
+          <h1>Label store</h1>
+        </div>
+      </div>
+      <button class="end">
+        Return to plaza
+      </button>
+    </div>
+    <!--CENTER END-->
+    <!--RIGHT START-->
+    <div class="right">
+      <div class="row">
+        <button class="big" id="btn-storage" onclick="document.getElementById('cauldrons').setAttribute('open',null)">
+          <i class="icon-cauldron"></i>
+          <span class="hide-md">Cauldrons</span>
+        </button>
+        <div>
+          <div class="info" id="account">
+            <i class="icon-hat hide-sm"></i>
+            <span class="dat hide-sm" id="wallet">Not logged yet</span>
+            <button id="btn-settings" onclick="document.getElementById('settings').setAttribute('open',null)">
+              <span class="material-icons">settings</span>
+            </button>
+          </div>
+          <div class="info" id="rodos">
+            <!-- <div class="title price">-10</div> clase arriba oper -->
+            <span> <strong class="hide-md">RODOS</strong> <i class="icon-rodo_coin"></i> </span>
+            <span class="dat" id="q-rodos">---</span>
+            <a class="btn" href="https://potionseller.io/profileBeta0.0.2/account.html" target="_blank">
+              <span class="material-icons">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button id="btn-pythoness">
+        <span class="material-icons">expand_less</span>
+      </button>
+    </div>
+    <!--RIGHT END-->
+  </header>
+	
+    <!-- SETTINGS START -->
+      <dialog id="settings">
+        <div class="parchment">
+    			<div class="p-title">
+    				<i class="material-icons">settings</i> Settings
+    				<button id="close" onclick="document.getElementById('settings').removeAttribute('open')">
+    					<i class="icon-close"></i>
+    				</button>
+    			</div>
+    			<div class="p-cont">
+    				<div id="session" data-isloged="true">
+    					<h3 class="row">
+    						<i class="material-icons">account_balance_wallet</i>
+    						Wallet
+    					</h3>
+    					<span id="wallet">12345...67890</span>
+    					<button id="login" onclick="GAME.LoginMoralis()">Login</button>
+    					<button id="logout" onclick="GAME.LogoutMoralis()">Logout</button>
+    					<a href="https://potionseller.io/profileBeta0.0.2/account.html" class="btn" target="_blank">
+    						Go to profile <i class="icon-hat"></i>
+    					</a>
+    				</div>
+    				<hr/>
+    				<div>
+    					<p>Our social media</p>
+    					<div class="row">
+    						
+    						<a class="icon-discord" href="https://discord.gg/893GdYUUs8" target="_blank">
+    							<div class="title">Discord</div>
+    						</a>
+    						<a class="icon-twitter" href="https://twitter.com/PotionSellerNFT" target="_blank">
+    							<div class="title">Twitter</div>
+    						</a>
+    						<a class="icon-telegram" href="https://t.me/PotionSellerAnnouncements" target="_blank">
+    							<div class="title">Telegram</div>
+    						</a>
+    						<a class="icon-medium" href="https://medium.com/@potionsellerNFT" target="_blank">
+    							<div class="title">Medium</div>
+    						</a>
+    						<a class="icon-mail" href="mailto:potionsellergame@gmail.com" target="_blank">
+    							<div class="title">potionsellergame@gmail.com</div>
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+        </div>
+      </dialog>
+    <!-- SETTINGS END -->
+
+    <!--INVENTORY START-->
+    <aside id="inventory" data-opened="">
+      
+      <!-- INGREDIENTS START -->
+      <div id="ingredients" class="book show-up">
+        <div class="page">
+          <div class="details">
+            <img src="assets/objects/f_buy-items_.png" alt="item">
+            <h3>My inventory</h3>
+            <p>Ingredients inventory</p>
+          </div>
+          <div class="row items">
+            <div class="item" data-q="0">
+              <div class="name">Frog's corn</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <div class="out" style="display:none">0 SOLD</div>
+              <img src="assets/ingredients/i_frog-corn.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Citrine</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <div class="out" style="display:none">0 SOLD</div>
+              <img src="assets/ingredients/i_citrine.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Blue apple</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <div class="out" style="display:none">0 SOLD</div>
+              <img src="assets/ingredients/i_blue-apple.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Mandragora's roots</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <div class="out" style="display:none">0 SOLD</div>
+              <img src="assets/ingredients/i_mandragora-roots.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Schorl</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <div class="out" style="display:none">0 SOLD</div>
+              <img src="assets/ingredients/i_schorl.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Scorpion's double tail</div>
+              <div class="new" style="display:none">0 NEW</div>
+                              <div class="out" style="display:none">0 SOLD</div>
+              <img src="assets/ingredients/i_scorpion-double-tail.png" alt="item">
+              <div class="info">-</div>
+            </div>
+          </div><!--row items-->
+        </div> 
+      </div>
+      <!-- INGREDIENTS END -->
+      
+      <!-- POTIONS START -->
+      <div id="potions" class="book show-up">
+        <div class="page">
+          <div class="details">
+            <img src="assets/objects/f_create-potions_.png" alt="item">
+            <h3>My inventory</h3>
+            <div class="subdet">
+              <p>Potions inventory</p>
+              <h4>Ingredients</h4>
+              <ul class="r-ingredients">
+                <li data-q="1" class="row">
+                  <!-- <img src="assets/ingredients/i_amanita-muscaria.png" alt="item">
+                  <strong>1</strong> -->
+                  <span class="f-fill">Each potion uses around 1 to 3 types of ingredients</span>
+                  <!-- <span class="info"><small>2 IN STOCK</small></span> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row items">
+            <div class="item" data-q="0">
+              <div class="name">Ache Shooer</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <img src="assets/potions/p_basic_acheShooer.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Best Harvest</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <img src="assets/potions/p_basic_bestHarvest.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Happy Cow</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <img src="assets/potions/p_basic_happyCow.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Lovesickness</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <img src="assets/potions/p_basic_lovesickness.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Rats Repeller</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <img src="assets/potions/p_basic_ratsRepeller.png" alt="item">
+              <div class="info">-</div>
+            </div>
+            <div class="item" data-q="0">
+              <div class="name">Take Over Hangover</div>
+              <div class="new" style="display:none">0 NEW</div>
+              <img src="assets/potions/p_basic_takeOverHangover.png" alt="item">
+              <div class="info">-</div>
+            </div>
+          </div><!--row-items--> 
+          <div class="item" id="inv-label">
+            <div class="name">labels</div>
+            <div class="new" style="display:none">0 NEW</div>
+            <i class="img material-icons txt-magic">label</i>
+            <div class="info">-</div>
+          </div>
+        </div> 
+      </div>
+      <!-- POTIONS START -->
+        
+      <div class="shelf show-up">
+        <button >
+          <i class="icon-box"></i> <span>My Ingredients</span>
+        </button>
+        <button>
+          <i class="icon-potion"></i> <span>My Potions</span>
+        </button>
+      </div>
+
+    </aside>
+    <!--INVENTORY END-->
+
+    <!-- PYTHONESS START -->
+    <div id="pythoness" class="show-left">
+      <img src="assets/characters/pythoness_NL.png" alt="phythoness">
+      <!-- PARCHMENT START -->
+      <div class="parchment">
+        <div class="p-cont">
+          <h5>This week average prices</h5>
+          <div class="row items">
+            <div class="item">
+              <div class="name title">Mandragora roots</div>
+              <img src="assets/ingredients/i_mandragora-roots.png" alt="Mandragora roots">
+              <div class="price">-</div>
+            </div>
+            <div class="item">
+              <div class="name title">Scorpion Double tail</div>
+              <img src="assets/ingredients/i_scorpion-double-tail.png" alt="Scorpion Double tail">
+              <div class="price">-</div>
+            </div>
+            <div class="item">
+              <div class="name title">Blue Apple</div>
+              <img src="assets/ingredients/i_blue-apple.png" alt="Blue Apple">
+              <div class="price">-</div>
+            </div>
+            <div class="item">
+              <div class="name title">Frog Corn</div>
+              <img src="assets/ingredients/i_frog-corn.png" alt="Frog Corn">
+              <div class="price">-</div>
+            </div>
+            <div class="item">
+              <div class="name title">Schorl</div>
+              <img src="assets/ingredients/i_schorl.png" alt="schorl">
+              <div class="price">-</div>
+            </div>
+            <div class="item">
+              <div class="name title">Citrine</div>
+              <img src="assets/ingredients/i_citrine.png" alt="Citrine">
+              <div class="price">-</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PARCHMENT END -->
+    </div>
+    <!-- PYTHONESS END -->
+
+
+
+	<!-- MIDDLE START -->
+	<main>
+    <div id="showcase" class="container show">
+      <dialog open>
+        <div class="parchment">
+            <div class="p-title">
+                <i class="material-icons">auto_awesome</i>
+                Coming Soon
+                <i class="material-icons">auto_awesome</i>
+            </div>
+            <div class="p-cont">
+                <p><strong>We are still finding the right spell for this magic label</strong></p>
+                <p>The magic label can be aplied to a potion during brewing section to later reveal the magic power within this potion</p>
+            </div>
+        </div>
+      </dialog>
+    </div>
+	</main>
+  <!-- MIDDLE END -->
+
+
+  <!-- DIALOG START -->
+  <footer class="anim">
+    <div class="left">
+      <div class="bg-parchment-h row">
+        <div class="item">
+          <img src="assets/potions/p_basic_ratsRepeller.png" alt="potion">
+        </div>
+        <span>+</span>
+        <span class="material-icons txt-magic">label</span>
+        <span>=</span>
+        <div class="item">
+          <img src="assets/potions/p_basic_ratsRepeller.png" alt="potion">
+          <span class="mpwr">100</span>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+			<img id="seller" src="assets/characters/label_sir.png" alt="seller">
+      <div class="dialog">
+        <div class="info" id = "steps">SELLER</div>
+        <div class="txt">
+          Greetings, apprentice!
+          These powerful labels will help you to reveal your
+          <span class="txt-magic"><i class="material-icons">auto_awesome</i> potions Magic Power <i class="material-icons">auto_awesome</i></span>.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- DIALOG END -->
+  
+  <!-- Clear Cache -->
+  <dialog id="refresh">
+    <div class="parchment">
+        <div class="p-title">
+            <i class="material-icons">auto_awesome</i>
+            New version available
+            <i class="material-icons">auto_awesome</i>
+        </div>
+        <div class="p-cont">
+            <p class="big">PRESS<br/> <mark>Cntrl + F5</mark><br/> TO REFRESH<br/>THIS TAB</p>
+            <p><strong>Clear cache in you browser to have the new version</strong></p>
+        </div>
+    </div>
+  </dialog>
+  <!-- Clear Cache -->
+
+    <!-- CAULDRONS START -->
+     <dialog id="cauldrons">
+      <div class="parchment elegant">
+          <div class="p-title">
+              <i class="icon-cauldron"></i>  Cauldrons
+              <button id="close" onclick = "document.getElementById('cauldrons').removeAttribute('open')">
+                  <i class="icon-close"></i>
+              </button>
+          </div>
+          <div class="p-cont">
+              <div class="info">
+                  - <i class="icon-potion"></i> LEFT
+              </div>
+              <div class="row items">
+              </div>
+          </div>
+      </div>
+    </dialog>
+    <!-- CAULDRONS END -->
+    
+    <script src = "./src/Module.js" type = "module"></script>
+    <script src = "./src/CauldronPopup.js"></script>
+    <script src = "./src/Pythoness_dropdown.js"></script>
+    <script src = "./src/Shelf.js"></script>
+    <script src = "./src/dayendManager.js"></script>
+    <script src = "./src/TagStoreManager.js"></script>
+</body>
+</html>

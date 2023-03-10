@@ -1,0 +1,341 @@
+<html>
+<head>
+	<title>Potion Seller: Get Ingredients</title>
+	<meta charset="utf-8" />
+	<meta http-equiv=”Content-Language” content=”en”/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Potion Seller The game">
+	<meta name="theme-color" content="#904A3B">
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body id="buy-ing">
+  
+  <header>
+    <!--LEFT START-->
+    <div class="left">
+      <div class="row">
+        <img class="logo" src="assets/logo_sf.svg" alt="logo">
+        <div id="dtime">
+          <div class="info">
+            <span>DAY</span>
+            <span class="dat" id="dt-day">--</span>
+          </div>
+          <div class="info">
+            <span class="dat" id="dt-time">--:--</span>
+            <span >HH : MM</span>
+          </div>
+        </div>
+        <button class="big" id="btn-storage">
+          <i class="icon-shelf"></i> Storage
+        </button>
+      </div>
+		</div>
+    <!--LEFT END-->
+    <!--CENTER START-->
+		<div class="center">
+			<div class="parchment">
+        <div class="p-cont">
+          <i class="icon-cart"></i>
+          <h1>Buy ingredients</h1>
+          <div class="info">
+            <span class="dat">1</span>
+            <i class="material-icons">emoji_emotions</i> left
+          </div>
+        </div>
+			</div>
+			<button class="end">
+				Finish today's purchase
+			</button>
+		</div>
+    <!--CENTER END-->
+    <!--RIGHT START-->
+		<div class="right">
+			<div class="info">
+        <i class="icon-hat"></i>
+				<span class="dat">0x01234...01234</span>
+				<button id="btn-settings">
+          <span class="material-icons">settings</span>
+        </button>
+			</div>
+			<div class="info" id="rodos">
+				<span class="dat" id="q-rodos">1234</span>
+				<span>RODOS <i class="icon-rodo_coin"></i> </span>
+        <a class="btn" href="#" target="_blank">
+          <span class="material-icons">shopping_cart</span>
+        </a>
+			</div>
+      <button id="btn-pythoness">
+        <span class="material-icons">expand_less</span>
+      </button>
+		</div>
+    <!--RIGHT END-->
+	</header>
+  
+
+<!-- SETTINGS START -->
+  <dialog id="settings">
+    <div class="parchment">
+			<div class="p-title">
+				<i class="material-icons">settings</i> Settings
+				<button id="close">
+					<i class="icon-close"></i>
+				</button>
+			</div>
+			<div class="p-cont">
+				<div id="session" data-isloged="true">
+					<h3 class="row">
+						<i class="material-icons">account_balance_wallet</i>
+						Wallet
+					</h3>
+					<span id="wallet">12345...67890</span>
+					<button id="login">Login</button>
+					<button id="logout">Logout</button>
+					<a href="https://potionseller.io/profile/account.html" class="btn" target="_blank">
+						Go to profile <i class="icon-hat"></i>
+					</a>
+				</div>
+				<div>
+					<h3 class="row">
+						<i class="material-icons">translate</i>
+						Languaje
+					</h3>
+					<div class="row">
+						<button class="active">English</button>
+						<button>Español</button>
+					</div>
+				</div>
+				<hr/>
+				<div>
+					<p>Our social media</p>
+					<div class="row">
+						
+						<a class="icon-discord" href="https://discord.gg/893GdYUUs8" target="_blank">
+							<div class="title">Discord</div>
+						</a>
+						<a class="icon-twitter" href="https://twitter.com/PotionSellerNFT" target="_blank">
+							<div class="title">Twitter</div>
+						</a>
+						<a class="icon-telegram" href="https://t.me/PotionSellerAnnouncements" target="_blank">
+							<div class="title">Telegram</div>
+						</a>
+						<a class="icon-medium" href="https://medium.com/@potionsellerNFT" target="_blank">
+							<div class="title">Medium</div>
+						</a>
+						<a class="icon-mail" href="mailto:potionsellergame@gmail.com" target="_blank">
+							<div class="title">potionsellergame@gmail.com</div>
+						</a>
+					</div>
+				</div>
+			</div>
+    </div>
+  </dialog>
+<!-- SETTINGS END -->
+
+
+<!-- CAULDRONS START -->
+<dialog id="cauldrons" open>
+	<div class="parchment elegant">
+		<div class="p-title">
+			<i class="icon-cauldron"></i>  Cauldrons
+			<button id="close">
+				<i class="icon-close"></i>
+			</button>
+		</div>
+		<div class="p-cont">
+			<div class="info">
+				9 <i class="icon-potion"></i> LEFT
+			</div>
+			<div class="row items">
+				<div class="item c-common">
+					<img src="assets/cauldrons/export-common.gif" alt="cauldron">
+					<div class="name">Common</div>
+					<p class="hide-sm">2 <i class="icon-potion"></i></p>
+					<div class="mpwr">10</div>
+				</div>
+				<div class="item c-uncommon">
+					<img src="assets/cauldrons/export-uncommon.gif" alt="cauldron">
+					<div class="name">Uncommon</div>
+					<p class="hide-sm">3 <i class="icon-potion"></i></p>
+					<div class="mpwr">10</div>
+				</div>
+				<div class="item c-rare">
+					<img src="assets/cauldrons/export-rare.gif" alt="cauldron">
+					<div class="name">Rare</div>
+					<p class="hide-sm">4 <i class="icon-potion"></i></p>
+					<div class="mpwr">10</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</dialog>
+<!-- CAULDRONS END -->
+
+
+<!-- MAGIC-POWER START -->
+<dialog id="magic-power">
+	<div class="parchment elegant">
+		<div class="p-title">
+			<span class="material-icons">auto_awesome</span> Magic power
+			<button id="close">
+				<i class="icon-close"></i>
+			</button>
+		</div>
+		<div class="p-cont">
+			<!-- Level start -->
+			<div id="levels">
+				<div class="row" id="progression">
+					<h3>Lvl. 1</h3>
+					<div class="progressbar">
+						<div class="progress" style="width:20%;"></div>
+						<div class="score">
+							<span class="material-icons">auto_awesome</span>
+							<span>12354 / 82354</span>
+						</div>
+					</div>
+					<h3>Lvl. 2</h3>
+				</div>
+				<div class="row" id="benefits">
+					<ul>
+						<span>Current benefits</span>
+						<li>04 sellers</li>
+					</ul>
+					<ul>
+						<span>Next benefits</span>
+						<li>04 buyers</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Level end -->
+			<!-- Quantity stored start -->
+			<div id="mp-stored">
+				<h2>Total
+					<span class="material-icons">auto_awesome</span>
+					<span>12354</span>
+				</h2>
+				<div class="percentagebar">
+					<div id="perc-storage" width="80%"></div>
+					<!-- back part is cauldron percentaje -->
+				</div>
+				<div class="row items">
+					<div class="btn item row active">
+						<span class="material-icons">square</span>
+						<span>Storage</span>
+						<span class="mpwr">12354</span>
+					</div>
+					<div class="btn item row">
+						<span class="material-icons">square</span>
+						<span>Cauldrons</span>
+						<span class="mpwr">123</span>
+					</div>
+				</div>
+			</div>
+			<!-- Quantity stored end -->
+			<!-- STORAGE START -->
+			<div id="storage-board">
+				<div class="board small">
+					<div class="b_bh"></div>
+					<div class="b_bh"></div>
+					<div class="b_rr"></div>
+					<div class="b_as"></div>
+					<div class="b_bh"></div>
+					<div class="b_th"></div>
+					<div class="b_th"></div>
+					<div class="b_ls"></div>
+					<div class="b_ls"></div>
+					<div class="b_as"></div>
+					<div class="b_rr"></div>
+					<div class="b_rr"></div>
+					<div class="b_th"></div>
+					<div class="b_th"></div>
+					<div class="b_bh"></div>
+					<div class="b_bh"></div>
+					<div class="b_hc"></div>
+					<div class="b_hc"></div>
+				</div>
+				<div class="row info pagination" id="board-pag" data-currpage="1" >
+					<button class="icon-prev" id="prev"></button>
+					<div class="row">
+					</div>
+					<button class="icon-next" id="next"></button> 
+				</div>
+			</div>
+			<!-- STORAGE END -->
+			<!-- CAULDRONS START -->
+			<!-- <div class="row items">
+				<div class="item">
+					<img src="assets/cauldrons/pot_common.png" alt="cauldron">
+					<div class="name">Common</div>
+					<div class="mpwr">4</div>
+				</div>
+				<div class="item">
+					<img src="assets/cauldrons/pot_uncommon.png" alt="cauldron">
+					<div class="name">Uncommon</div>
+					<div class="mpwr">64</div>
+				</div>
+				<div class="item">
+					<img src="assets/cauldrons/pot_rare.png" alt="cauldron">
+					<div class="name">Rare</div>
+					<div class="mpwr">128</div>
+				</div>
+			</div> -->
+			<!-- CAULDRONS END -->
+		</div>
+	</div>
+</dialog>
+<!-- MAGIC-POWER END -->
+
+
+<!-- STORAGE START -->
+  <dialog id="storage">
+    <div class="parchment">
+			<div class="p-title">
+				<i class="icon-shelf"></i> Storage
+				<button id="close">
+					<i class="icon-close"></i>
+				</button>
+			</div>
+			<div class="p-cont" id="potions-game">
+				<div class="info big">
+					<span>Magic Power</span>
+					<span class="dat">12354</span>
+				</div>
+				<div class="board small">
+					<div class="b_bh"></div>
+					<div class="b_bh"></div>
+					<div class="b_rr"></div>
+					<div class="b_as"></div>
+					<div class="b_bh"></div>
+					<div class="b_th"></div>
+					<div class="b_th"></div>
+					<div class="b_ls"></div>
+					<div class="b_ls"></div>
+					<div class="b_as"></div>
+					<div class="b_rr"></div>
+					<div class="b_rr"></div>
+					<div class="b_th"></div>
+					<div class="b_th"></div>
+					<div class="b_bh"></div>
+					<div class="b_bh"></div>
+					<div class="b_hc"></div>
+					<div class="b_hc"></div>
+				</div>
+
+				<div class="row info pagination" id="board-pag" data-currpage="1">
+					<button class="icon-prev" id="prev"></button>
+					<div class="row">
+						<button class="icon active">1</button>
+						<button class="icon">2</button>
+						<button class="icon">3</button>
+					</div>
+					<button class="icon-next" id="next"></button> 
+				</div>
+
+			</div>
+    </div>
+  </dialog>
+<!-- STORAGE END -->
+
+
+</body>
+</html>
