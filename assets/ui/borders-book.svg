@@ -1,0 +1,18 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+<style type="text/css">
+	.st0{fill:#904A3B;}
+	.st1{fill:#813B2C;}
+	.st2{fill:#E7715F;}
+	.st3{fill:#FFAC7B;}
+</style>
+<rect x="8" y="8" class="st0" width="240" height="220"/>
+<rect x="8" y="228" class="st1" width="240" height="16"/>
+<path id="Path_16" class="st2" d="M0,0h96v8h-4L8,92v12l-8,8l0,0V0z"/>
+<path id="Path_9" class="st3" d="M0,0h96L0,96V0z"/>
+<path id="Path_16_1_" class="st2" d="M256,0h-96v8h4l84,84v12l8,8l0,0V0z"/>
+<path id="Path_9_1_" class="st3" d="M256,0h-96l96,96V0z"/>
+<path id="Path_13" class="st3" d="M0,240h96L0,144V240z"/>
+<rect id="Rectangle_16" y="240" class="st2" width="96" height="16"/>
+<path id="Path_13_1_" class="st3" d="M256,240h-96l96-96V240z"/>
+<rect id="Rectangle_16_1_" x="160" y="240" class="st2" width="96" height="16"/>
+</svg>
