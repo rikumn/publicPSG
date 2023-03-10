@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="96" viewBox="0 0 32 96">
+  <g id="tire" transform="translate(0 -0.494)">
+    <rect id="Rectangle_131" data-name="Rectangle 131" width="32" height="96" rx="16" transform="translate(0 0.494)" fill="#46403f"/>
+    <rect id="Rectangle_132" data-name="Rectangle 132" width="20" height="5" rx="2.5" transform="translate(6 64.494)" fill="#1c1c1c"/>
+    <rect id="Rectangle_139" data-name="Rectangle 139" width="20" height="5" rx="2.5" transform="translate(6 27.494)" fill="#8e8a86"/>
+    <rect id="Rectangle_133" data-name="Rectangle 133" width="20" height="5" rx="2.5" transform="translate(6 74.494)" fill="#1c1c1c"/>
+    <rect id="Rectangle_136" data-name="Rectangle 136" width="20" height="5" rx="2.5" transform="translate(6 17.494)" fill="#8e8a86"/>
+    <rect id="Rectangle_134" data-name="Rectangle 134" width="20" height="4" rx="2" transform="translate(6 83.494)" fill="#1c1c1c"/>
+    <rect id="Rectangle_137" data-name="Rectangle 137" width="20" height="5" rx="2.5" transform="translate(6 8.494)" fill="#8e8a86"/>
+    <rect id="Rectangle_135" data-name="Rectangle 135" width="18" height="4" rx="2" transform="translate(7 90.494)" fill="#1c1c1c"/>
+    <rect id="Rectangle_138" data-name="Rectangle 138" width="18" height="4" rx="2" transform="translate(7 2.494)" fill="#8e8a86"/>
+  </g>
+</svg>

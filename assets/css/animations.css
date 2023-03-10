@@ -1,0 +1,319 @@
+
+/**/
+@keyframes float {
+  0% { transform: translateY(2pt); }
+  50% { transform: translateY(-2pt); }
+  100% { transform: translateY(2pt); }
+}
+@keyframes lightNatural {
+  0% {
+    filter: drop-shadow( 0px 0px 0.5em #AEFFA8 );
+    -webkit-filter: drop-shadow( 0px 0px 0.5em #AEFFA8 );
+    -moz-filter: drop-shadow( 0px 0px 0.5em #AEFFA8 );
+  }
+  50% {
+    filter: drop-shadow( 0px 0px 1em #AEFFA8 );
+    -webkit-filter: drop-shadow( 0px 0px 1em #AEFFA8 );
+    -moz-filter: drop-shadow( 0px 0px 1em #AEFFA8 );
+  }
+  100% {
+    filter: drop-shadow( 0px 0px 0.5em #AEFFA8 );
+    -webkit-filter: drop-shadow( 0px 0px 0.5em #AEFFA8 );
+    -moz-filter: drop-shadow( 0px 0px 0.5em #AEFFA8 );
+  }
+}
+@keyframes lightMoon {
+  0% {
+    filter: drop-shadow( 0px 0px 0.5em #8D9CFF );
+    -webkit-filter: drop-shadow( 0px 0px 0.5em #8D9CFF );
+    -moz-filter: drop-shadow( 0px 0px 0.5em #8D9CFF );
+  }
+  50% {
+    filter: drop-shadow( 0px 0px 1em #8D9CFF );
+    -webkit-filter: drop-shadow( 0px 0px 1em #8D9CFF );
+    -moz-filter: drop-shadow( 0px 0px 1em #8D9CFF ); 
+  }
+  100% {
+    filter: drop-shadow( 0px 0px 0.5em #8D9CFF );
+    -webkit-filter: drop-shadow( 0px 0px 0.5em #8D9CFF );
+    -moz-filter: drop-shadow( 0px 0px 0.5em #8D9CFF );
+  }
+}
+@keyframes lightSolar {
+  0% {
+    filter: drop-shadow( 0px 0px 0.5em #FFD87D );
+    -webkit-filter: drop-shadow( 0px 0px 0.5em #FFD87D );
+    -moz-filter: drop-shadow( 0px 0px 0.5em #FFD87D );
+  }
+  50% {
+    filter: drop-shadow( 0px 0px 1em #FFD87D );
+    -webkit-filter: drop-shadow( 0px 0px 1em #FFD87D );
+    -moz-filter: drop-shadow( 0px 0px 1em #FFD87D ); 
+  }
+  100% {
+    filter: drop-shadow( 0px 0px 0.5em #FFD87D );
+    -webkit-filter: drop-shadow( 0px 0px 0.5em #FFD87D );
+    -moz-filter: drop-shadow( 0px 0px 0.5em #FFD87D );
+  }
+}
+@keyframes lightCauldron {
+  0% {
+    filter: drop-shadow( 0px 0px 0.5em var(--cgld) );
+    -webkit-filter: drop-shadow( 0px 0px 0.5em var(--cgld) );
+    -moz-filter: drop-shadow( 0px 0px 0.5em var(--cgld) );
+  }
+  50% {
+    filter: drop-shadow( 0px 0px 1em var(--cgld) );
+    -webkit-filter: drop-shadow( 0px 0px 1em var(--cgld) );
+    -moz-filter: drop-shadow( 0px 0px 1em var(--cgld) ); 
+  }
+  100% {
+    filter: drop-shadow( 0px 0px 0.5em var(--cgld) );
+    -webkit-filter: drop-shadow( 0px 0px 0.5em var(--cgld) );
+    -moz-filter: drop-shadow( 0px 0px 0.5em var(--cgld) );
+  }
+}
+@keyframes lightMagic {
+  /* brightness(125%) */
+  0% {
+    filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #485601 )
+            drop-shadow( 0px 0px 5pt #E8FF0060 );
+    -webkit-filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #485601 )
+            drop-shadow( 0px 0px 5pt #E8FF0060 );
+    -moz-filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #485601 )
+            drop-shadow( 0px 0px 5pt #E8FF0060 );
+  }
+  50% {
+    filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #48560180 )
+            drop-shadow( 0px 0px 4pt #E8FF00BB );
+    -webkit-filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #48560180 )
+            drop-shadow( 0px 0px 4pt #E8FF00BB );
+    -moz-filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #48560180 )
+            drop-shadow( 0px 0px 4pt #E8FF00BB );
+  }
+  100% {
+    filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #485601 )
+            drop-shadow( 0px 0px 5pt #E8FF0060 );
+    -webkit-filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #485601 )
+            drop-shadow( 0px 0px 5pt #E8FF0060 );
+    -moz-filter: 
+            brightness(110%)
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #000 )
+            drop-shadow( 0px 0px 0.25pt #485601 )
+            drop-shadow( 0px 0px 5pt #E8FF0060 );
+  }
+}
+@keyframes border {
+  0% {
+    filter: drop-shadow( 0px 0px  2pt #000 );
+    -webkit-filter: drop-shadow( 0px 0px  2pt #000 );
+    -moz-filter: drop-shadow( 0px 0px  2pt #000 );
+  }
+  50% {
+    filter: drop-shadow( 0px 0px 2pt #000 );
+    -webkit-filter: drop-shadow( 0px 0px 2pt #000 );
+    -moz-filter: drop-shadow( 0px 0px 2pt #000 ); 
+  }
+  100% {
+    filter: drop-shadow( 0px 0px  2pt #000 );
+    -webkit-filter: drop-shadow( 0px 0px  2pt #000 );
+    -moz-filter: drop-shadow( 0px 0px  2pt #000 );
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/**/
+@keyframes show {
+	from {
+    opacity: 0;
+  }
+	to {
+    opacity: 1;
+  }
+}
+.show {
+  animation: show 1s forwards;
+}
+@keyframes show-down {
+	from {
+    opacity: 0;
+    transform: translateY(-2.5em);
+  }
+	to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.show-down {
+  animation: show-down 1s forwards;
+}
+@keyframes show-up {
+	from {
+    opacity: 0;
+    transform: translateY(2.5em);
+  }
+	to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.show-up {
+  animation: show-up 1s forwards;
+}
+@keyframes show-left {
+	from {
+    opacity: 0;
+    transform: translateX(2.5em);
+  }
+	to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.show-left {
+  animation: show-left 1s forwards;
+}
+@keyframes show-right {
+	from {
+    opacity: 0;
+    transform: translateX(-2.5em);
+  }
+	to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.show-right {
+  animation: show-right 1s forwards;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hide {
+	from {
+    opacity: 1;
+  }
+	to {
+    opacity: 0;
+    display: none;
+  }
+}
+.hide {
+  animation: show 1s forwards;
+}
+
+
+/**/
+@keyframes shake {
+  0% { transform: translateY(2pt); }
+  5% { transform: translateY(-2pt); }
+  10% { transform: translateY(4pt); }
+  15% { transform: translateY(-4pt); }
+  20% { transform: translateY(8pt); }
+	25% { transform: translateY(-8pt); }
+  30% { transform: translateY(12pt); }
+	35% { transform: translateY(-12pt); }
+  40% { transform: translateY(12pt); }
+	45% { transform: translateY(-12pt); }
+  50% { transform: translateY(12pt); }
+	55% { transform: translateY(-12pt); }
+  60% { transform: translateY(12pt); }
+	65% { transform: translateY(-12pt); }
+  70% { transform: translateY(12pt); }
+	75% { transform: translateY(-12pt); }
+  80% { transform: translateY(12pt); }
+	85% { transform: translateY(-12pt); }
+  90% { transform: translateY(12pt); }
+	95% { transform: translateY(-12pt); }
+	100% { transform: translateY(0px); }
+}
+
+@keyframes grow {
+	from { transform: scale(1); }
+	to { transform: scale(1.75); }
+}
+@keyframes grow-decrease {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.75); }
+	1000% { transform: scale(1); }
+}
+
+/*  */
+@keyframes rotate-flip {
+  0% { transform: rotateZ(0deg); }
+	50% { transform: rotateZ(180deg); }
+  50.5% { transform: rotateZ(180deg) scaleY(-1); }
+  100% { transform: rotateZ(360deg) scaleY(-1); }
+}
+.rotate-flip {
+  animation: rotate-flip 2.2s infinite;
+}
+
+/*  */
+@keyframes anim32f {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -100%;
+  }
+}
+.sprite-32fr {
+  width: 8em;
+  height: 8em;
+  display: block;
+  background-image: url(../pots/common-sec/common_sec.png);
+  background-size: cover;
+  animation: anim32f 4s steps(31,end) infinite;
+}

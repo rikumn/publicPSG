@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96.006" height="167.998" viewBox="0 0 96.006 167.998">
+  <g id="wood-handle" transform="translate(-988 -286.002)">
+    <rect id="Rectangle_658" data-name="Rectangle 658" width="32" height="96" rx="16" transform="translate(1020 358)" fill="#e08960"/>
+    <path id="Subtraction_153" data-name="Subtraction 153" d="M20011.424,6759.311a47.96,47.96,0,0,1-48-47.312h24a24,24,0,0,0,47.982,0h24.008a47.959,47.959,0,0,1-48,47.312Zm48-47.443h0v-1.247c0,.114,0,.229,0,.343s0,.23,0,.345C20059.426,6711.495,20059.426,6711.682,20059.424,6711.868ZM20019.566,6664h-16.3a48.576,48.576,0,0,1,16.3,0Z" transform="translate(-18975.42 -6377.31)" fill="#bf5a3a"/>
+    <rect id="Rectangle_655" data-name="Rectangle 655" width="96" height="24" rx="12" transform="translate(988 322)" fill="#e08960"/>
+    <path id="Union_142" data-name="Union 142" d="M20,8a14.868,14.868,0,0,0,7.2-2c3-2,4.8-6,4.8-6V8ZM0,8V0S1.8,4,4.8,6A14.87,14.87,0,0,0,12,8Z" transform="translate(1020 410)" fill="#bf5a3a" opacity="0.5"/>
+    <path id="Rectangle_659" data-name="Rectangle 659" d="M0,0H32a0,0,0,0,1,0,0V20A16,16,0,0,1,16,36h0A16,16,0,0,1,0,20V0A0,0,0,0,1,0,0Z" transform="translate(1020 418)" fill="#bf5a3a" opacity="0.5"/>
+  </g>
+</svg>
